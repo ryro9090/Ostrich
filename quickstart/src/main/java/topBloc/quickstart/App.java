@@ -193,6 +193,13 @@ public class App {
 
 			ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
+			
+/*
+* Note: http://3.86.140.38:5000/challenge was not working. Whenever I searched
+* for it error code https 400 appeared. I discovered a website that tests Java
+* post, which was used as a proof of concept in order to show the code
+* sucessfully posts a request.
+*/
 			URL url = new URL("https://httpbin.org/post");
 
 			String urlParameters = new String("id:ryan.guerrero@valpo.edu,name:Ryan Guerrero,");
